@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from './logo.svg'
 import './App.css';
 
-const App = () => {
+const App = (props) => {
   return (
-    <header id="hd">
+    <header id="hd" className={ props.bgcls }>
       <div className="container d-flex justify-content-between align-items-center">
         <h1 className='col-4 col-md-2'>
           <a href="/" className='d-block'>
@@ -14,7 +14,7 @@ const App = () => {
           </a>
         </h1>
         <ul id="gnb" className='d-flex'>
-          <li><a href="">대메뉴</a></li>
+          <li><a href="" className={props.textcls}>대메뉴</a></li>
           <li><a href="">대메뉴</a></li>
           <li><a href="">대메뉴</a></li>
           <li><a href="">대메뉴</a></li>
